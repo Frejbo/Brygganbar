@@ -70,6 +70,11 @@
 }
 
 body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 0;
     background: url(Kiosken.jpg) no-repeat center center;
     background-attachment: fixed;
@@ -78,35 +83,56 @@ body {
 }
 
 .kulglass {
-    /* margin-top: 100px; */
-    float: left;
-    background-color: rgba(255, 250, 205, 0.705);
-    backdrop-filter: blur(8px);
+        /* margin-top: 100px; */
+        /* float: left; */
+        background-color: rgba(255, 250, 205, 0.705);
+        backdrop-filter: blur(8px);
+        padding: 25px;
+        border-radius: 25px;
+        box-shadow: 3px 3px 25px darkgray;
+        margin: 1cm;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: fit-content;
 }
 .kulglasskopning {
-    height:300px;
+    width:90%;
+    margin: 5%;
+    margin-right: 0;
+
+    
+    /* margin-right: -15%; */
+    /* width: fit-content; */
     border-radius: 40px;
-    margin: 10%;
-    margin-right: 50px;
+    /* margin: 1cm; */
     transform: rotate(3deg);
     box-shadow: 2px 2px 25px black;
-    align-self: center;
+    /* display:inline; */
 }
 
 .pizza {
-    float: right;
+    /* float: right; */
     background-color:#b58e72bb;
     backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 25px;
+    /* width: fit-content; */
+    box-shadow: 3px 3px 25px darkgray;
+    margin: 1cm;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .dricka {
     background-color:rgba(116, 180, 180, 0.771);
-    float: left;
+    /* float: left; */
     padding: 25px;
     border-radius: 25px;
     width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
-    margin: 5%;
+    margin: 1cm;
     display: flex;
     flex-wrap:wrap;
     backdrop-filter: blur(8px);
@@ -116,47 +142,45 @@ body {
 .dricka img {
     height:200px;
     border-radius: 40px;
-    /* margin: 1%; */
+    margin: 1cm;
     /* margin-right: 50px; */
     transform: rotate(3deg);
     box-shadow: 2px 2px 25px black;
 }
 
 .öppetider {
+    height: fit-content;
+    width: fit-content;
     background-color:rgba(202, 202, 202, 0.771);
-    float: right;
+    /* float: right; */
     padding: 25px;
     border-radius: 25px;
-    width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
-    margin: 5%;
+    margin: 1cm;
     backdrop-filter: blur(8px);
 }
 
 .eventkväll {
     background-color:rgba(202, 202, 202, 0.771);
-    float: right;
+    /* float: right; */
     padding: 25px;
     border-radius: 25px;
     width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
-    margin: 5%;
+    margin: 1cm;
     backdrop-filter: blur(8px);
 }
 
 .instagrambilder {
     background-color:rgba(116, 180, 118, 0.771);
-    float: right;
+    /* float: right; */
     padding: 25px;
     border-radius: 25px;
     width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
-    margin: 5%;
-    /* display: flex;
-    flex-wrap:wrap; */
+    margin: 1cm;
     backdrop-filter: blur(8px);
     align-items: center;
-    /* justify-content: space-evenly; */
 }
 
 
