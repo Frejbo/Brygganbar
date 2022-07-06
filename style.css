@@ -83,6 +83,15 @@ body {
     background-color: rgba(255, 250, 205, 0.705);
     backdrop-filter: blur(8px);
 }
+.kulglasskopning {
+    height:300px;
+    border-radius: 40px;
+    margin: 10%;
+    margin-right: 50px;
+    transform: rotate(3deg);
+    box-shadow: 2px 2px 25px black;
+    align-self: center;
+}
 
 .pizza {
     float: right;
@@ -114,6 +123,17 @@ body {
 }
 
 .öppetider {
+    background-color:rgba(202, 202, 202, 0.771);
+    float: right;
+    padding: 25px;
+    border-radius: 25px;
+    width: fit-content;
+    box-shadow: 3px 3px 25px darkgray;
+    margin: 5%;
+    backdrop-filter: blur(8px);
+}
+
+.eventkväll {
     background-color:rgba(202, 202, 202, 0.771);
     float: right;
     padding: 25px;

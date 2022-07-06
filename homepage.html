@@ -31,6 +31,9 @@
             </div>
         </div>
         
+
+
+
         <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;">
             <div class="kulglass" id="kulglass" style="padding: 25px; border-radius: 25px; width: fit-content; box-shadow: 3px 3px 25px darkgray; margin: 5%; display: flex; flex-wrap: wrap; align-items: center;">
                 <div>
@@ -55,45 +58,10 @@
                     </ul>
                 </div>
                 <div>
-                    <!-- <img src="kulglass.jpg" alt="Bild på vår Kulglass" style="height:300px; border-radius: 40px; margin: 10%; margin-right: 50px; transform: rotate(3deg); box-shadow: 2px 2px 25px black; align-self: center;"> -->´
+                    <!-- <img src="kulglass.jpg" alt="Bild på vår Kulglass"> -->´
                     
-
-
-                    <video id="v0" tabindex="0", autobuffer preload>
-                        <source src="Glasskopning.mp4">
-                    </video>
-
-                    <script>
-                        var vidOffset = 0
-                        var frameNumber = 0, // start video at frame 0
-                        // lower numbers = faster playback
-                        playbackConst = 200, 
-                        // get page height from video duration
-                        setHeight = document.getElementById("set-height"), 
-                        // select video element         
-                        vid = document.getElementById('v0'); 
-                        // var vid = $('#v0')[0]; // jquery option
-
-                        // dynamically set the page height according to video length
-                        vid.addEventListener('loadedmetadata', function() {
-                        // setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
-                        });
-
-
-                        // Use requestAnimationFrame for smooth playback
-                        function scrollPlay() {
-                            var offset = document.getElementById("v0").getBoundingClientRect().top - document.body.getBoundingClientRect().top
-                            var frameNumber  = window.pageYOffset/playbackConst + vidOffset;
-                            if (frameNumber <= 3.2) { vid.currentTime = frameNumber; }
-                            window.requestAnimationFrame(scrollPlay);
-                            }
-                        
-                        window.requestAnimationFrame(scrollPlay);
-
-
-                    </script>
-
-
+                    <canvas class="kulglasskopning"></canvas>
+                    <script src="main.js"></script>
 
                 </div>
             </div>
@@ -139,7 +107,11 @@
                 </section>
             </div>
             <div>
-                <img src="pizza.jpg" alt="Bild på pizza" style="height:250px; border-radius: 40px; margin: 10%; margin-right: 50px; transform: rotate(-3deg); box-shadow: 2px 2px 25px black;">
+                <!-- <img src="pizza.jpg" alt="Bild på pizza" style="height:250px; border-radius: 40px; margin: 10%; margin-right: 50px; transform: rotate(-3deg); box-shadow: 2px 2px 25px black;"> -->
+
+                <canvas class="pizzavideo"></canvas>
+                <script src="main.js"></script>
+
             </div>
         </div>
         
@@ -172,7 +144,7 @@
                     <li>Rött Vin</li>
                     <li>Prosecco</li>
                     <li>Rosé</li>
-                    <li>Grängens (endast fredag & lördag 20:00-23:00)</li>
+                    <li>Grängens (endast på <a style="text-decoration-line: none;" href="#eventkväll">eventkvällar</a>)</li>
                     <li>Cider (Fläder/Jordgubb/Päron)</li>
                     <li>Mariestad</li>
                 </ul>
@@ -188,6 +160,10 @@
             <p>Instagrambilder</p>
         </div>
 
+
+        <div class="eventkväll" id="eventkväll">
+
+        </div>
 
 
         <div class="bottombar">
