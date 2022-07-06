@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="sv" class="html">
+    <head>
+        <title>Brygganbar</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .main {
+                display: flex;
+            }
+        </style>
+        <link rel="icon" href="logga.jpg">
+        <meta name="keywords" content="Brygganbar, Räfsnäs, Rävsnäs, Revsnäs, Revsnes, Rävsnes, båt, Romina, Tjockö, Gräddö, hamn, brygga, bar, pizza, glass, korv, kaffe, väddö, kulglass, sommar, Bryggan bar">
+    </head>
+
+    <body>
+        <div class="header">
+            <img class="logo" src="logga.jpg" alt="Brygganbar logga" height="100%">
+            <div style="color: wheat; text-align: center; margin: 0px;">
+                <h1><b><u>Välkommen till Brygganbar</u></b></h1>
+                <h3>Räfsnäs lokala hamnkrog</h3>
+            </div>
+            <a class="insta" href="https://www.instagram.com/brygganbar/" target="_blank">
+                <img src="instagram.png" alt="Instagram" height="100%">
+            </a>
+        </div>
+        <div class="topnav">
+            <div class="bookmarks" style="display: flex; width: 100%; justify-content: center;">
+                <a href="#kulglass">KULGLASS</a>
+                <a href="#öppetider">ÖPPETIDER</a>
+                <a href="#pizza">PIZZA</a>
+            </div>
+        </div>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;">
+            <div class="kulglass" id="kulglass" style="padding: 25px; border-radius: 25px; width: fit-content; box-shadow: 3px 3px 25px darkgray; margin: 5%; display: flex; flex-wrap: wrap; align-items: center;">
+                <div>
+                    <h2>Väddö Kulglass:</h2>
+                    <ul>
+                    <!-- <p> -->
+                        <li>Jordgubb</li>
+                        <li>Vit Choklad med Hallon</li>
+                        <li>Vanilj</li>
+                        <li>Hasselnöt</li>
+                        <li>Rostad Mandel med Kola</li>
+                        <li>Pistage</li>
+                        <li>Söt Citron</li>
+                        <li>Choklad</li>
+                        <li>Kokos</li>
+                        <li>Karamell med Kola Fudge</li>
+                        <li>Lakrits</li>
+                        <li>Mango</li>
+                        <li>Blåbär</li>
+                        <li>Kladdkaka</li>
+                    <!-- </p> -->
+                    </ul>
+                </div>
+                <div>
+                    <!-- <img src="kulglass.jpg" alt="Bild på vår Kulglass" style="height:300px; border-radius: 40px; margin: 10%; margin-right: 50px; transform: rotate(3deg); box-shadow: 2px 2px 25px black; align-self: center;"> -->´
+                    
+
+
+                    <video id="v0" tabindex="0", autobuffer preload>
+                        <source src="Glasskopning.mp4">
+                    </video>
+
+                    <script>
+                        var vidOffset = 0
+                        var frameNumber = 0, // start video at frame 0
+                        // lower numbers = faster playback
+                        playbackConst = 200, 
+                        // get page height from video duration
+                        setHeight = document.getElementById("set-height"), 
+                        // select video element         
+                        vid = document.getElementById('v0'); 
+                        // var vid = $('#v0')[0]; // jquery option
+
+                        // dynamically set the page height according to video length
+                        vid.addEventListener('loadedmetadata', function() {
+                        // setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+                        });
+
+
+                        // Use requestAnimationFrame for smooth playback
+                        function scrollPlay() {
+                            var offset = document.getElementById("v0").getBoundingClientRect().top - document.body.getBoundingClientRect().top
+                            var frameNumber  = window.pageYOffset/playbackConst + vidOffset;
+                            if (frameNumber <= 3.2) { vid.currentTime = frameNumber; }
+                            window.requestAnimationFrame(scrollPlay);
+                            }
+                        
+                        window.requestAnimationFrame(scrollPlay);
+
+
+                    </script>
+
+
+
+                </div>
+            </div>
+
+            <div class="öppetider" id="öppetider" style="height:fit-content;">
+                <h2>
+                    Öppetider
+                </h2>
+                <p>
+                    <b>Söndag - Torsdag:</b> 12:00 - 20:00.<br>
+                    <b>Fredag & Lördag:</b> 12:00 - 23:00.
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- <div style="position: relative; left: 70%;">
+            <h1>+
+                Om Brygganbar
+            </h1>
+        </div> -->
+        <!-- <hr> -->
+        <div class="pizza" id="pizza" style="padding: 25px; border-radius: 25px; width: fit-content; box-shadow: 3px 3px 25px darkgray; margin: 5%; display: flex; flex-wrap: wrap; align-items: center;">
+            <div>
+                <h2>
+                    Pizza
+                </h2>
+                <section>
+                    <h3 style="margin-bottom: 0px">Gräddö</h3>
+                    <p style="margin-top: 0px;">Buffelmozzarella, Basilika</p>
+                </section>
+                <section>
+                    <h3 style="margin-bottom: 0px">Södersvik</h3>
+                    <p style="margin-top: 0px;">Prosciutto, Parmesan, Ruccola</p>
+                </section>
+                <section>
+                    <h3 style="margin-bottom: 0px">Räfsnäs</h3>
+                    <p style="margin-top: 0px;">Salami, Parmesan, Ruccola</p>
+                </section>
+                <section>
+                    <h3 style="margin-bottom: 0px">Bryggan</h3>
+                    <p style="margin-top: 0px;">Chèvre, Honung, Valnötter (Bianco)</p>
+                </section>
+            </div>
+            <div>
+                <img src="pizza.jpg" alt="Bild på pizza" style="height:250px; border-radius: 40px; margin: 10%; margin-right: 50px; transform: rotate(-3deg); box-shadow: 2px 2px 25px black;">
+            </div>
+        </div>
+        
+
+        <div class="dricka" id="dricka">
+            <section>
+                <h2>Drickor</h2>
+                <h3>
+                    Alkoholfritt:
+                </h3>
+                <ul>
+                    <li>Coca-Cola (+zero)
+                    <li>Fanta</li>
+                    <li>Bubbelvatten</li>
+                    <li>Stilla Vatten</li>
+                    <li>Alkoholfri Öl</li>
+                    <li>San Pellegrino (citron & blodappelsin)</li>
+                    <li>Vitamin Well (Boost & Reload)</li>
+                    <li>Nocco (Limonata & Juicy Breeze)</li>
+                </ul>
+
+                <h3>
+                    Alkohol
+                </h3>
+                <ul>
+                    <li>Mellerud</li>
+                    <li>Peroni</li>
+                    <li>Mariestad</li>
+                    <li>Vitt Vin</li>
+                    <li>Rött Vin</li>
+                    <li>Prosecco</li>
+                    <li>Rosé</li>
+                    <li>Grängens (endast fredag & lördag 20:00-23:00)</li>
+                    <li>Cider (Fläder/Jordgubb/Päron)</li>
+                    <li>Mariestad</li>
+                </ul>
+            </section>
+            <img src="cola.webp" alt="Bild på drickor">
+        </div>
+
+
+        <div class="instagrambilder">
+            <h2>
+                Det senaste hos Brygganbar:
+            </h2>
+            <p>Instagrambilder</p>
+        </div>
+
+
+
+        <div class="bottombar">
+            <div>
+                <h3>Kontakt:</h3>
+                <p>Epost: info@brygganbar.se</p>
+                <h3>Telefon:</h3>
+                <p>070-754 21 00</p>
+            </div>
+            <div>
+                <h3>Adress:</h3>
+                <p>Räfsnäs brygga, 760 15 Gräddö</p>
+                <!-- <a href="geo:59.75242,19,08005" target="_blank">Klicka här</a> -->
+            </div>
+        </div>
+    </body>
+</html>
