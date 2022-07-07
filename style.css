@@ -124,6 +124,14 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
+.pizzavideo {
+    height:250px;
+    border-radius: 40px;
+    margin: 10%;
+    margin-right: 50px;
+    transform: rotate(-3deg);
+    box-shadow: 2px 2px 25px black;
+}
 
 .dricka {
     background-color:rgba(116, 180, 180, 0.771);
