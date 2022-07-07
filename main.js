@@ -40,7 +40,7 @@ function updateImage(index, img, canvas, path) {
 function update_canvas(canvas, path, frameCount, img, elementname) {
 
     var scrollTop = -document.querySelector(elementname).getBoundingClientRect().bottom + (window.innerHeight*.95)
-    var maxScroll = window.innerHeight*.5
+    var maxScroll = window.innerHeight*.4
     var scrollFraction = (scrollTop / maxScroll)
     var frameIndex = Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount))
     if (frameIndex >= 0) {
