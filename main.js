@@ -3,7 +3,7 @@ const html = document.documentElement;
 const glasscanvas = document.querySelector(".kulglasskopning");
 const pizzacanvas = document.querySelector(".pizzavideo");
 
-const glass_frameCount = 151;
+const glass_frameCount = 92;
 const pizza_frameCount = 118;
 
 const glass_img = new Image();
@@ -52,12 +52,12 @@ function update_canvas(canvas, path, frameCount, img, elementname) {
 
 
 // Preload
-// const preloadImages = () => {
-//     for (let i = 0; i < element_names.length; i++) {
-//         for (let i2 = 1; i2 < element_names[i][2]; i2++) {
-//             const img = new Image();
-//             img.src = (element_names[i][1] + i2.toString().padStart(4, "0") + ".jpg");
-//         }
-//     }
-// }
-// preloadImages();
+const preloadImages = () => {
+    for (let i = 0; i < element_names.length; i++) {
+        for (let i2 = 1; i2 < element_names[i][2]; i2++) {
+            const img = new Image();
+            img.src = (element_names[i][1] + i2.toString().padStart(4, "0") + ".jpg");
+        }
+    }
+}
+preloadImages();
