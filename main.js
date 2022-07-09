@@ -4,7 +4,7 @@ const glasscanvas = document.querySelector(".kulglasskopning");
 const pizzacanvas = document.querySelector(".pizzavideo");
 
 const glass_frameCount = 92;
-const pizza_frameCount = 118;
+const pizza_frameCount = 94;
 
 const glass_img = new Image();
 const pizza_img = new Image();
@@ -40,7 +40,7 @@ function updateImage(index, img, canvas, path) {
 function update_canvas(canvas, path, frameCount, img, elementname) {
 
     var scrollTop = -document.querySelector(elementname).getBoundingClientRect().bottom + (window.innerHeight*.95)
-    var maxScroll = window.innerHeight*.4
+    var maxScroll = window.innerHeight*.5
     var scrollFraction = (scrollTop / maxScroll)
     var frameIndex = Math.min(frameCount - 1, Math.floor(scrollFraction * frameCount))
     if (frameIndex >= 0) {
