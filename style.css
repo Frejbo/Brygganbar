@@ -94,7 +94,7 @@ body {
 .kulglass {
     background-color: rgba(255, 250, 205, 0.705);
     backdrop-filter: blur(8px);
-    padding: 25px;
+    padding: 2%;
     border-radius: 25px;
     box-shadow: 3px 3px 25px darkgray;
     margin: 2%;
@@ -102,10 +102,6 @@ body {
     flex-wrap: wrap;
     align-items: center;
     width: fit-content;
-}
-
-.kulglass:{
-    background-color: black;
 }
 
 .kulglasskopning {
@@ -127,9 +123,9 @@ body {
     /* float: right; */
     background-color:#b58e72bb;
     backdrop-filter: blur(8px);
-    padding: 25px;
+    padding: 2%;
     border-radius: 25px;
-    /* width: fit-content; */
+    width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
     margin: 2%;
     display: flex;
@@ -150,7 +146,7 @@ body {
 .dricka {
     background-color:rgba(116, 180, 180, 0.771);
     /* float: left; */
-    padding: 25px;
+    padding: 2%;
     border-radius: 25px;
     width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
@@ -174,28 +170,25 @@ body {
 }
 
 .öppetider {
-    height: fit-content;
     width: fit-content;
     background-color:rgba(202, 202, 202, 0.771);
     /* float: right; */
-    padding: 25px;
+    padding: 2%;
     border-radius: 25px;
     box-shadow: 3px 3px 25px darkgray;
     margin: 5%;
     backdrop-filter: blur(8px);
-    white-space: nowrap;
 }
 
 .eventkväll {
+    width: fit-content;
     background-color:rgba(202, 202, 202, 0.771);
     /* float: right; */
-    padding: 25px;
+    padding: 2%;
     border-radius: 25px;
-    width: fit-content;
     box-shadow: 3px 3px 25px darkgray;
     margin: 5%;
     backdrop-filter: blur(8px);
-    white-space: nowrap;
 }
 
 #eventoöppetid {
