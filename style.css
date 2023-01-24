@@ -1,5 +1,6 @@
 .html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 header {
@@ -11,6 +12,20 @@ header {
     z-index: 10;
     box-shadow: 0px 18px 20px rgba(0, 0, 0, 0.681);
 }
+
+body {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    background: url(Kiosken.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Brush Script MT', "Lobster", "Rubik Moonrocks", "Titan One", "Yellowtail", "Shadows Into Light", "Caveat", "Indie Flower", "Permanent Marker", "Courgette", "Kalam", "Bree Serif", "Kaushan Script", "Cookie", "Bradley Hand", cursive;
+}
+
 .header {
     display: flex;
     flex-wrap: nowrap;
@@ -78,18 +93,6 @@ header {
     box-shadow: 0px 0px 5px black;
 }
 
-body {
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
-    background: url(Kiosken.jpg) no-repeat center center;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Brush Script MT', "Lobster", "Rubik Moonrocks", "Titan One", "Yellowtail", "Shadows Into Light", "Caveat", "Indie Flower", "Permanent Marker", "Courgette", "Kalam", "Bree Serif", "Kaushan Script", "Cookie", "Bradley Hand", cursive;
-}
 
 .kulglass {
     background-color: rgba(255, 250, 205, 0.705);
